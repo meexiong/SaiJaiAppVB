@@ -1,0 +1,221 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class frmTitle
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.btnNew = New DevComponents.DotNetBar.ButtonX()
+        Me.btnSave = New DevComponents.DotNetBar.ButtonX()
+        Me.btnDelete = New DevComponents.DotNetBar.ButtonX()
+        Me.btnCancel = New DevComponents.DotNetBar.ButtonX()
+        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
+        Me.txtTitleID = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.txtTitleName = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.DGV = New DevComponents.DotNetBar.Controls.DataGridViewX()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.btnCancel)
+        Me.Panel1.Controls.Add(Me.btnDelete)
+        Me.Panel1.Controls.Add(Me.btnSave)
+        Me.Panel1.Controls.Add(Me.btnNew)
+        Me.Panel1.Location = New System.Drawing.Point(12, 12)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(464, 30)
+        Me.Panel1.TabIndex = 0
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.txtTitleName)
+        Me.Panel2.Controls.Add(Me.txtTitleID)
+        Me.Panel2.Controls.Add(Me.LabelX2)
+        Me.Panel2.Controls.Add(Me.LabelX1)
+        Me.Panel2.Location = New System.Drawing.Point(12, 53)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(464, 123)
+        Me.Panel2.TabIndex = 1
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.DGV)
+        Me.Panel3.Location = New System.Drawing.Point(12, 182)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(464, 321)
+        Me.Panel3.TabIndex = 1
+        '
+        'btnNew
+        '
+        Me.btnNew.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnNew.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnNew.Location = New System.Drawing.Point(3, 4)
+        Me.btnNew.Name = "btnNew"
+        Me.btnNew.Size = New System.Drawing.Size(75, 23)
+        Me.btnNew.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnNew.TabIndex = 0
+        Me.btnNew.Text = "ສ້າງໃໝ່"
+        '
+        'btnSave
+        '
+        Me.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnSave.Location = New System.Drawing.Point(84, 4)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(75, 23)
+        Me.btnSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnSave.TabIndex = 1
+        Me.btnSave.Text = "ບັນທຶກ"
+        '
+        'btnDelete
+        '
+        Me.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnDelete.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnDelete.Location = New System.Drawing.Point(165, 4)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnDelete.TabIndex = 2
+        Me.btnDelete.Text = "ລົບອອກ"
+        '
+        'btnCancel
+        '
+        Me.btnCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnCancel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnCancel.Location = New System.Drawing.Point(246, 4)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnCancel.TabIndex = 3
+        Me.btnCancel.Text = "ຍົກເລີກ"
+        '
+        'LabelX1
+        '
+        '
+        '
+        '
+        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX1.Location = New System.Drawing.Point(27, 25)
+        Me.LabelX1.Name = "LabelX1"
+        Me.LabelX1.Size = New System.Drawing.Size(86, 29)
+        Me.LabelX1.TabIndex = 0
+        Me.LabelX1.Text = "ລະຫັດ"
+        '
+        'LabelX2
+        '
+        '
+        '
+        '
+        Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX2.Location = New System.Drawing.Point(27, 69)
+        Me.LabelX2.Name = "LabelX2"
+        Me.LabelX2.Size = New System.Drawing.Size(86, 29)
+        Me.LabelX2.TabIndex = 1
+        Me.LabelX2.Text = "ຕຳແໜ່ງ"
+        '
+        'txtTitleID
+        '
+        '
+        '
+        '
+        Me.txtTitleID.Border.Class = "TextBoxBorder"
+        Me.txtTitleID.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.txtTitleID.Location = New System.Drawing.Point(119, 19)
+        Me.txtTitleID.Name = "txtTitleID"
+        Me.txtTitleID.PreventEnterBeep = True
+        Me.txtTitleID.Size = New System.Drawing.Size(132, 35)
+        Me.txtTitleID.TabIndex = 2
+        '
+        'txtTitleName
+        '
+        '
+        '
+        '
+        Me.txtTitleName.Border.Class = "TextBoxBorder"
+        Me.txtTitleName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.txtTitleName.Location = New System.Drawing.Point(119, 63)
+        Me.txtTitleName.Name = "txtTitleName"
+        Me.txtTitleName.PreventEnterBeep = True
+        Me.txtTitleName.Size = New System.Drawing.Size(324, 35)
+        Me.txtTitleName.TabIndex = 3
+        '
+        'DGV
+        '
+        Me.DGV.AllowUserToAddRows = False
+        Me.DGV.AllowUserToDeleteRows = False
+        Me.DGV.BackgroundColor = System.Drawing.SystemColors.Control
+        Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Saysettha OT", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV.DefaultCellStyle = DataGridViewCellStyle1
+        Me.DGV.GridColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.DGV.Location = New System.Drawing.Point(3, 3)
+        Me.DGV.Name = "DGV"
+        Me.DGV.ReadOnly = True
+        Me.DGV.Size = New System.Drawing.Size(458, 315)
+        Me.DGV.TabIndex = 0
+        '
+        'frmTitle
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(488, 515)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
+        Me.Font = New System.Drawing.Font("Saysettha OT", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 7, 4, 7)
+        Me.Name = "frmTitle"
+        Me.Text = "Title"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
+    End Sub
+
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnCancel As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents btnDelete As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents btnSave As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents btnNew As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents txtTitleName As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents txtTitleID As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents DGV As DevComponents.DotNetBar.Controls.DataGridViewX
+End Class
