@@ -133,4 +133,10 @@ Public Class frmMain
         frm.MdiParent = Me
         frm.Show()
     End Sub
+
+    Private Sub ButtonItem7_Click(sender As Object, e As EventArgs) Handles ButtonItem7.Click
+        Dim frm As New frmUnit
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
 End Class

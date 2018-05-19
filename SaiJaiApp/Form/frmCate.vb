@@ -48,21 +48,17 @@ Public Class frmCate
         btnCancel.Enabled = True
     End Sub
     Private Sub ClearText()
-        txtCateID.Text = "Auto ID"
+        txtCateID.Text = "AutoID"
         txtCateName.Text = ""
     End Sub
     Private Sub btnNew_Click(sender As Object, e As EventArgs) Handles btnNew.Click
-        btnNew.Enabled = False
-        btnSave.Enabled = True
-        btnDelete.Enabled = True
-        btnCancel.Enabled = True
+        EnableBtn()
+        ClearText()
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-        btnNew.Enabled = True
-        btnSave.Enabled = False
-        btnDelete.Enabled = False
-        btnCancel.Enabled = False
+        DisableBtn()
+        ClearText()
 
     End Sub
 
@@ -86,7 +82,8 @@ Public Class frmCate
             End If
             LoadData()
             txtCateName.Clear()
-
+            DisableBtn()
+            ClearText()
 
         Catch ex As Exception
 
@@ -95,10 +92,26 @@ Public Class frmCate
 
     Private Sub DGV_Click(sender As Object, e As EventArgs) Handles DGV.Click
         Try
+            EnableBtn()
+            ClearText()
             With DGV.Rows(DGV.CurrentRow.Index)
                 txtCateID.Text = .Cells(0).Value
                 txtCateName.Text = .Cells(1).Value
             End With
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Try
+            Dim delete As String = "Delete Tbl_Category where CatID=@CatID"
+            cm = New SqlCommand(delete, conn)
+            cm.Parameters.Add("@CatID", SqlDbType.Int).Value = CInt(txtCateID.Text)
+            cm.ExecuteNonQuery()
+            LoadData()
+            ClearText()
+            DisableBtn()
         Catch ex As Exception
 
         End Try

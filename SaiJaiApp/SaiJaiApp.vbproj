@@ -74,10 +74,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Form\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="Form\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -117,22 +117,28 @@
     <Compile Include="Form\frmProduct.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNewProduct.Designer.vb">
+    <Compile Include="Form\frmNewProduct.Designer.vb">
       <DependentUpon>frmNewProduct.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmNewProduct.vb">
+    <Compile Include="Form\frmNewProduct.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSale.Designer.vb">
+    <Compile Include="Form\frmSale.Designer.vb">
       <DependentUpon>frmSale.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmSale.vb">
+    <Compile Include="Form\frmSale.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUserLogin.Designer.vb">
+    <Compile Include="Form\frmUserLogin.Designer.vb">
       <DependentUpon>frmUserLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmUserLogin.vb">
+    <Compile Include="Form\frmUserLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnit.Designer.vb">
+      <DependentUpon>frmUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -171,14 +177,17 @@
     <EmbeddedResource Include="Form\frmProduct.resx">
       <DependentUpon>frmProduct.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewProduct.resx">
+    <EmbeddedResource Include="Form\frmNewProduct.resx">
       <DependentUpon>frmNewProduct.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSale.resx">
+    <EmbeddedResource Include="Form\frmSale.resx">
       <DependentUpon>frmSale.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUserLogin.resx">
+    <EmbeddedResource Include="Form\frmUserLogin.resx">
       <DependentUpon>frmUserLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnit.resx">
+      <DependentUpon>frmUnit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

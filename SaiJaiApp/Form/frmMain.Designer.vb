@@ -29,6 +29,11 @@ Partial Class frmMain
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.RibbonControl1 = New DevComponents.DotNetBar.RibbonControl()
+        Me.RibbonPanel2 = New DevComponents.DotNetBar.RibbonPanel()
+        Me.RibbonBar7 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem10 = New DevComponents.DotNetBar.ButtonItem()
+        Me.RibbonBar6 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem9 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonPanel1 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar5 = New DevComponents.DotNetBar.RibbonBar()
         Me.ButtonItem8 = New DevComponents.DotNetBar.ButtonItem()
@@ -41,11 +46,6 @@ Partial Class frmMain
         Me.btnMenuEmp = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar2 = New DevComponents.DotNetBar.RibbonBar()
         Me.btnMenuTitle = New DevComponents.DotNetBar.ButtonItem()
-        Me.RibbonPanel2 = New DevComponents.DotNetBar.RibbonPanel()
-        Me.RibbonBar7 = New DevComponents.DotNetBar.RibbonBar()
-        Me.ButtonItem10 = New DevComponents.DotNetBar.ButtonItem()
-        Me.RibbonBar6 = New DevComponents.DotNetBar.RibbonBar()
-        Me.ButtonItem9 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonPanel3 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar12 = New DevComponents.DotNetBar.RibbonBar()
         Me.ButtonItem17 = New DevComponents.DotNetBar.ButtonItem()
@@ -74,9 +74,9 @@ Partial Class frmMain
         Me.QatCustomizeItem1 = New DevComponents.DotNetBar.QatCustomizeItem()
         Me.StatusStrip.SuspendLayout()
         Me.RibbonControl1.SuspendLayout()
+        Me.RibbonPanel2.SuspendLayout()
         Me.RibbonPanel1.SuspendLayout()
         Me.RibbonPanel4.SuspendLayout()
-        Me.RibbonPanel2.SuspendLayout()
         Me.RibbonPanel3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -108,8 +108,8 @@ Partial Class frmMain
         '
         Me.RibbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.RibbonControl1.CaptionVisible = True
-        Me.RibbonControl1.Controls.Add(Me.RibbonPanel2)
         Me.RibbonControl1.Controls.Add(Me.RibbonPanel1)
+        Me.RibbonControl1.Controls.Add(Me.RibbonPanel2)
         Me.RibbonControl1.Controls.Add(Me.RibbonPanel4)
         Me.RibbonControl1.Controls.Add(Me.RibbonPanel3)
         Me.RibbonControl1.Dock = System.Windows.Forms.DockStyle.Top
@@ -141,6 +141,107 @@ Partial Class frmMain
         Me.RibbonControl1.TabIndex = 11
         Me.RibbonControl1.Text = "RibbonControl1"
         '
+        'RibbonPanel2
+        '
+        Me.RibbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonPanel2.Controls.Add(Me.RibbonBar7)
+        Me.RibbonPanel2.Controls.Add(Me.RibbonBar6)
+        Me.RibbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 68)
+        Me.RibbonPanel2.Name = "RibbonPanel2"
+        Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.RibbonPanel2.Size = New System.Drawing.Size(1086, 83)
+        '
+        '
+        '
+        Me.RibbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonPanel2.TabIndex = 2
+        Me.RibbonPanel2.Visible = False
+        '
+        'RibbonBar7
+        '
+        Me.RibbonBar7.AutoOverflowEnabled = True
+        '
+        '
+        '
+        Me.RibbonBar7.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonBar7.ContainerControlProcessDialogKey = True
+        Me.RibbonBar7.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RibbonBar7.DragDropSupport = True
+        Me.RibbonBar7.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem10})
+        Me.RibbonBar7.Location = New System.Drawing.Point(103, 0)
+        Me.RibbonBar7.Name = "RibbonBar7"
+        Me.RibbonBar7.Size = New System.Drawing.Size(100, 80)
+        Me.RibbonBar7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonBar7.TabIndex = 1
+        Me.RibbonBar7.Text = "ຄົ້ນຫາການຂາຍ"
+        '
+        '
+        '
+        Me.RibbonBar7.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar7.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem10
+        '
+        Me.ButtonItem10.ImagePaddingHorizontal = 50
+        Me.ButtonItem10.Name = "ButtonItem10"
+        Me.ButtonItem10.SubItemsExpandWidth = 14
+        Me.ButtonItem10.Symbol = ""
+        Me.ButtonItem10.SymbolSize = 33.0!
+        '
+        'RibbonBar6
+        '
+        Me.RibbonBar6.AutoOverflowEnabled = True
+        '
+        '
+        '
+        Me.RibbonBar6.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonBar6.ContainerControlProcessDialogKey = True
+        Me.RibbonBar6.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RibbonBar6.DragDropSupport = True
+        Me.RibbonBar6.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem9})
+        Me.RibbonBar6.Location = New System.Drawing.Point(3, 0)
+        Me.RibbonBar6.Name = "RibbonBar6"
+        Me.RibbonBar6.Size = New System.Drawing.Size(100, 80)
+        Me.RibbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonBar6.TabIndex = 0
+        Me.RibbonBar6.Text = "ຂາຍ"
+        '
+        '
+        '
+        Me.RibbonBar6.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar6.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem9
+        '
+        Me.ButtonItem9.ImagePaddingHorizontal = 67
+        Me.ButtonItem9.Name = "ButtonItem9"
+        Me.ButtonItem9.SubItemsExpandWidth = 14
+        Me.ButtonItem9.Symbol = ""
+        Me.ButtonItem9.SymbolSize = 33.0!
+        '
         'RibbonPanel1
         '
         Me.RibbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -165,7 +266,6 @@ Partial Class frmMain
         '
         Me.RibbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.RibbonPanel1.TabIndex = 1
-        Me.RibbonPanel1.Visible = False
         '
         'RibbonBar5
         '
@@ -381,106 +481,6 @@ Partial Class frmMain
         Me.btnMenuTitle.SubItemsExpandWidth = 14
         Me.btnMenuTitle.Symbol = ""
         Me.btnMenuTitle.SymbolSize = 33.0!
-        '
-        'RibbonPanel2
-        '
-        Me.RibbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonPanel2.Controls.Add(Me.RibbonBar7)
-        Me.RibbonPanel2.Controls.Add(Me.RibbonBar6)
-        Me.RibbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RibbonPanel2.Location = New System.Drawing.Point(0, 68)
-        Me.RibbonPanel2.Name = "RibbonPanel2"
-        Me.RibbonPanel2.Padding = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.RibbonPanel2.Size = New System.Drawing.Size(1086, 83)
-        '
-        '
-        '
-        Me.RibbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonPanel2.TabIndex = 2
-        '
-        'RibbonBar7
-        '
-        Me.RibbonBar7.AutoOverflowEnabled = True
-        '
-        '
-        '
-        Me.RibbonBar7.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonBar7.ContainerControlProcessDialogKey = True
-        Me.RibbonBar7.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RibbonBar7.DragDropSupport = True
-        Me.RibbonBar7.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem10})
-        Me.RibbonBar7.Location = New System.Drawing.Point(103, 0)
-        Me.RibbonBar7.Name = "RibbonBar7"
-        Me.RibbonBar7.Size = New System.Drawing.Size(100, 80)
-        Me.RibbonBar7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonBar7.TabIndex = 1
-        Me.RibbonBar7.Text = "ຄົ້ນຫາການຂາຍ"
-        '
-        '
-        '
-        Me.RibbonBar7.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar7.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        'ButtonItem10
-        '
-        Me.ButtonItem10.ImagePaddingHorizontal = 50
-        Me.ButtonItem10.Name = "ButtonItem10"
-        Me.ButtonItem10.SubItemsExpandWidth = 14
-        Me.ButtonItem10.Symbol = ""
-        Me.ButtonItem10.SymbolSize = 33.0!
-        '
-        'RibbonBar6
-        '
-        Me.RibbonBar6.AutoOverflowEnabled = True
-        '
-        '
-        '
-        Me.RibbonBar6.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonBar6.ContainerControlProcessDialogKey = True
-        Me.RibbonBar6.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RibbonBar6.DragDropSupport = True
-        Me.RibbonBar6.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem9})
-        Me.RibbonBar6.Location = New System.Drawing.Point(3, 0)
-        Me.RibbonBar6.Name = "RibbonBar6"
-        Me.RibbonBar6.Size = New System.Drawing.Size(100, 80)
-        Me.RibbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonBar6.TabIndex = 0
-        Me.RibbonBar6.Text = "ຂາຍ"
-        '
-        '
-        '
-        Me.RibbonBar6.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar6.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        'ButtonItem9
-        '
-        Me.ButtonItem9.ImagePaddingHorizontal = 67
-        Me.ButtonItem9.Name = "ButtonItem9"
-        Me.ButtonItem9.SubItemsExpandWidth = 14
-        Me.ButtonItem9.Symbol = ""
-        Me.ButtonItem9.SymbolSize = 33.0!
         '
         'RibbonPanel3
         '
@@ -702,13 +702,13 @@ Partial Class frmMain
         '
         'RibbonTabItem2
         '
-        Me.RibbonTabItem2.Checked = True
         Me.RibbonTabItem2.Name = "RibbonTabItem2"
         Me.RibbonTabItem2.Panel = Me.RibbonPanel2
         Me.RibbonTabItem2.Text = "ການຂາຍ"
         '
         'RibbonTabItem1
         '
+        Me.RibbonTabItem1.Checked = True
         Me.RibbonTabItem1.Name = "RibbonTabItem1"
         Me.RibbonTabItem1.Panel = Me.RibbonPanel1
         Me.RibbonTabItem1.Text = "ຂໍ້ມູນສິນຄ້າ"
@@ -865,9 +865,9 @@ Partial Class frmMain
         Me.StatusStrip.PerformLayout()
         Me.RibbonControl1.ResumeLayout(False)
         Me.RibbonControl1.PerformLayout()
+        Me.RibbonPanel2.ResumeLayout(False)
         Me.RibbonPanel1.ResumeLayout(False)
         Me.RibbonPanel4.ResumeLayout(False)
-        Me.RibbonPanel2.ResumeLayout(False)
         Me.RibbonPanel3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
