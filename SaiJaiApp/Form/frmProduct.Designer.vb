@@ -27,10 +27,10 @@ Partial Class frmProduct
         Me.btnRefresh = New DevComponents.DotNetBar.ButtonX()
         Me.btnNew = New DevComponents.DotNetBar.ButtonX()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
-        Me.DataGridViewX1 = New DevComponents.DotNetBar.Controls.DataGridViewX()
+        Me.DGV = New DevComponents.DotNetBar.Controls.DataGridViewX()
         Me.GroupPanel1.SuspendLayout()
         Me.GroupPanel2.SuspendLayout()
-        CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupPanel1
@@ -100,7 +100,7 @@ Partial Class frmProduct
         '
         Me.GroupPanel2.CanvasColor = System.Drawing.SystemColors.Control
         Me.GroupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
-        Me.GroupPanel2.Controls.Add(Me.DataGridViewX1)
+        Me.GroupPanel2.Controls.Add(Me.DGV)
         Me.GroupPanel2.DisabledBackColor = System.Drawing.Color.Empty
         Me.GroupPanel2.Location = New System.Drawing.Point(12, 53)
         Me.GroupPanel2.Name = "GroupPanel2"
@@ -135,12 +135,12 @@ Partial Class frmProduct
         Me.GroupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.GroupPanel2.TabIndex = 1
         '
-        'DataGridViewX1
+        'DGV
         '
-        Me.DataGridViewX1.AllowUserToAddRows = False
-        Me.DataGridViewX1.AllowUserToDeleteRows = False
-        Me.DataGridViewX1.BackgroundColor = System.Drawing.SystemColors.Control
-        Me.DataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV.AllowUserToAddRows = False
+        Me.DGV.AllowUserToDeleteRows = False
+        Me.DGV.BackgroundColor = System.Drawing.SystemColors.Control
+        Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Saysettha OT", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -148,18 +148,18 @@ Partial Class frmProduct
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewX1.DefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridViewX1.GridColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.DataGridViewX1.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridViewX1.Name = "DataGridViewX1"
-        Me.DataGridViewX1.ReadOnly = True
-        Me.DataGridViewX1.Size = New System.Drawing.Size(1062, 451)
-        Me.DataGridViewX1.TabIndex = 0
+        Me.DGV.DefaultCellStyle = DataGridViewCellStyle1
+        Me.DGV.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DGV.GridColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.DGV.Location = New System.Drawing.Point(0, 0)
+        Me.DGV.Name = "DGV"
+        Me.DGV.ReadOnly = True
+        Me.DGV.Size = New System.Drawing.Size(1062, 451)
+        Me.DGV.TabIndex = 0
         '
         'frmProduct
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1092, 522)
         Me.Controls.Add(Me.GroupPanel2)
@@ -170,7 +170,7 @@ Partial Class frmProduct
         Me.Text = "Product List"
         Me.GroupPanel1.ResumeLayout(False)
         Me.GroupPanel2.ResumeLayout(False)
-        CType(Me.DataGridViewX1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -179,5 +179,5 @@ Partial Class frmProduct
     Friend WithEvents GroupPanel2 As DevComponents.DotNetBar.Controls.GroupPanel
     Friend WithEvents btnRefresh As DevComponents.DotNetBar.ButtonX
     Friend WithEvents btnNew As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents DataGridViewX1 As DevComponents.DotNetBar.Controls.DataGridViewX
+    Friend WithEvents DGV As DevComponents.DotNetBar.Controls.DataGridViewX
 End Class
