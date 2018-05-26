@@ -5,8 +5,10 @@ Public Class frmProduct
     Dim ds As New DataSet
     Dim cm As New SqlCommand
     Private Sub btnNew_Click(sender As Object, e As EventArgs) Handles btnNew.Click
+        GlobalVariable.productID = ""
         Dim f As New frmNewProduct
         f.ShowDialog()
+        LoadData()
     End Sub
 
     Private Sub frmProduct_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -53,4 +55,20 @@ Public Class frmProduct
         End With
     End Sub
 
+    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
+        LoadData()
+    End Sub
+
+    Private Sub DGV_DoubleClick(sender As Object, e As EventArgs) Handles DGV.DoubleClick
+        Try
+            With DGV
+                GlobalVariable.productID = ""
+                GlobalVariable.productID = .Rows(DGV.CurrentRow.Index).Cells(0).Value
+                Dim frm As New frmNewProduct
+                frm.ShowDialog()
+            End With
+        Catch ex As Exception
+
+        End Try
+    End Sub
 End Class

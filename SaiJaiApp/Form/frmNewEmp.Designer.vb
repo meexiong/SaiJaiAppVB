@@ -23,30 +23,30 @@ Partial Class frmNewEmp
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupPanel1 = New DevComponents.DotNetBar.Controls.GroupPanel()
+        Me.btnCancel = New DevComponents.DotNetBar.ButtonX()
         Me.btnNew = New DevComponents.DotNetBar.ButtonX()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
-        Me.btnCancel = New DevComponents.DotNetBar.ButtonX()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtEmpID = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtEmpName = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtSurname = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtpbLink = New System.Windows.Forms.TextBox()
+        Me.pbImage = New System.Windows.Forms.PictureBox()
+        Me.cmb_Postion = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtAddress = New System.Windows.Forms.RichTextBox()
+        Me.txtPhone = New System.Windows.Forms.MaskedTextBox()
+        Me.txtBOD = New System.Windows.Forms.DateTimePicker()
+        Me.radMale = New System.Windows.Forms.RadioButton()
+        Me.radFemale = New System.Windows.Forms.RadioButton()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.radFemale = New System.Windows.Forms.RadioButton()
-        Me.radMale = New System.Windows.Forms.RadioButton()
-        Me.txtBOD = New System.Windows.Forms.DateTimePicker()
-        Me.txtPhone = New System.Windows.Forms.MaskedTextBox()
-        Me.txtAddress = New System.Windows.Forms.RichTextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.cmb_Postion = New System.Windows.Forms.ComboBox()
-        Me.pbImage = New System.Windows.Forms.PictureBox()
-        Me.txtpbLink = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtSurname = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtEmpName = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtEmpID = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupPanel1.SuspendLayout()
         Me.GroupPanel2.SuspendLayout()
         CType(Me.pbImage, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,6 +91,17 @@ Partial Class frmNewEmp
         '
         Me.GroupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.GroupPanel1.TabIndex = 1
+        '
+        'btnCancel
+        '
+        Me.btnCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnCancel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnCancel.Location = New System.Drawing.Point(104, 1)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(95, 23)
+        Me.btnCancel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnCancel.TabIndex = 1
+        Me.btnCancel.Text = "ຍົກເລີກ"
         '
         'btnNew
         '
@@ -162,91 +173,94 @@ Partial Class frmNewEmp
         Me.GroupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.GroupPanel2.TabIndex = 2
         '
-        'btnCancel
+        'txtpbLink
         '
-        Me.btnCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.btnCancel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.btnCancel.Location = New System.Drawing.Point(104, 1)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(95, 23)
-        Me.btnCancel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.btnCancel.TabIndex = 1
-        Me.btnCancel.Text = "ຍົກເລີກ"
+        Me.txtpbLink.Location = New System.Drawing.Point(527, 168)
+        Me.txtpbLink.Name = "txtpbLink"
+        Me.txtpbLink.Size = New System.Drawing.Size(203, 35)
+        Me.txtpbLink.TabIndex = 23
         '
-        'Label1
+        'pbImage
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(24, 6)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 29)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ລະຫັດ"
+        Me.pbImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pbImage.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbImage.Location = New System.Drawing.Point(527, 6)
+        Me.pbImage.Name = "pbImage"
+        Me.pbImage.Size = New System.Drawing.Size(203, 157)
+        Me.pbImage.TabIndex = 22
+        Me.pbImage.TabStop = False
         '
-        'txtEmpID
+        'cmb_Postion
         '
-        Me.txtEmpID.Location = New System.Drawing.Point(165, 3)
-        Me.txtEmpID.Name = "txtEmpID"
-        Me.txtEmpID.Size = New System.Drawing.Size(124, 35)
-        Me.txtEmpID.TabIndex = 1
+        Me.cmb_Postion.FormattingEnabled = True
+        Me.cmb_Postion.Location = New System.Drawing.Point(165, 44)
+        Me.cmb_Postion.Name = "cmb_Postion"
+        Me.cmb_Postion.Size = New System.Drawing.Size(325, 37)
+        Me.cmb_Postion.TabIndex = 21
         '
-        'Label2
+        'Label9
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(24, 172)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 29)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "ເພດ"
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(24, 47)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(64, 29)
+        Me.Label9.TabIndex = 20
+        Me.Label9.Text = "ຕຳແໜ່ງ"
         '
-        'txtEmpName
+        'txtAddress
         '
-        Me.txtEmpName.Location = New System.Drawing.Point(165, 87)
-        Me.txtEmpName.Name = "txtEmpName"
-        Me.txtEmpName.Size = New System.Drawing.Size(325, 35)
-        Me.txtEmpName.TabIndex = 5
+        Me.txtAddress.Location = New System.Drawing.Point(165, 333)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(325, 96)
+        Me.txtAddress.TabIndex = 19
+        Me.txtAddress.Text = ""
         '
-        'Label3
+        'txtPhone
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(24, 90)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(88, 29)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "ຊື່ພະນັກງານ"
+        Me.txtPhone.Location = New System.Drawing.Point(165, 251)
+        Me.txtPhone.Mask = "000 00000000"
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(145, 35)
+        Me.txtPhone.TabIndex = 18
         '
-        'txtSurname
+        'txtBOD
         '
-        Me.txtSurname.Location = New System.Drawing.Point(165, 128)
-        Me.txtSurname.Name = "txtSurname"
-        Me.txtSurname.Size = New System.Drawing.Size(325, 35)
-        Me.txtSurname.TabIndex = 7
+        Me.txtBOD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.txtBOD.Location = New System.Drawing.Point(165, 207)
+        Me.txtBOD.Name = "txtBOD"
+        Me.txtBOD.Size = New System.Drawing.Size(145, 35)
+        Me.txtBOD.TabIndex = 17
         '
-        'Label4
+        'radMale
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(24, 131)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 29)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "ນາມສະກຸນ"
+        Me.radMale.AutoSize = True
+        Me.radMale.Location = New System.Drawing.Point(230, 170)
+        Me.radMale.Name = "radMale"
+        Me.radMale.Size = New System.Drawing.Size(59, 33)
+        Me.radMale.TabIndex = 16
+        Me.radMale.TabStop = True
+        Me.radMale.Text = "ຊາຍ"
+        Me.radMale.UseVisualStyleBackColor = True
         '
-        'Label5
+        'radFemale
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(24, 213)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(113, 29)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "ວັນ,ເດືອນ,ປີເກີດ"
+        Me.radFemale.AutoSize = True
+        Me.radFemale.Location = New System.Drawing.Point(162, 170)
+        Me.radFemale.Name = "radFemale"
+        Me.radFemale.Size = New System.Drawing.Size(49, 33)
+        Me.radFemale.TabIndex = 15
+        Me.radFemale.TabStop = True
+        Me.radFemale.Text = "ຍິງ"
+        Me.radFemale.UseVisualStyleBackColor = True
         '
-        'Label6
+        'Label8
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(24, 254)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(88, 29)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "ເບີໂທລະສັບ"
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(24, 336)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(127, 29)
+        Me.Label8.TabIndex = 14
+        Me.Label8.Text = "ທີ່ຢູ່ຂອງພະນັກງານ"
         '
         'txtEmail
         '
@@ -264,94 +278,80 @@ Partial Class frmNewEmp
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "ອີເມວ"
         '
-        'Label8
+        'Label6
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(24, 336)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(127, 29)
-        Me.Label8.TabIndex = 14
-        Me.Label8.Text = "ທີ່ຢູ່ຂອງພະນັກງານ"
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(24, 254)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(88, 29)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "ເບີໂທລະສັບ"
         '
-        'radFemale
+        'Label5
         '
-        Me.radFemale.AutoSize = True
-        Me.radFemale.Location = New System.Drawing.Point(162, 170)
-        Me.radFemale.Name = "radFemale"
-        Me.radFemale.Size = New System.Drawing.Size(49, 33)
-        Me.radFemale.TabIndex = 15
-        Me.radFemale.TabStop = True
-        Me.radFemale.Text = "ຍິງ"
-        Me.radFemale.UseVisualStyleBackColor = True
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(24, 213)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(113, 29)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "ວັນ,ເດືອນ,ປີເກີດ"
         '
-        'radMale
+        'txtSurname
         '
-        Me.radMale.AutoSize = True
-        Me.radMale.Location = New System.Drawing.Point(230, 170)
-        Me.radMale.Name = "radMale"
-        Me.radMale.Size = New System.Drawing.Size(59, 33)
-        Me.radMale.TabIndex = 16
-        Me.radMale.TabStop = True
-        Me.radMale.Text = "ຊາຍ"
-        Me.radMale.UseVisualStyleBackColor = True
+        Me.txtSurname.Location = New System.Drawing.Point(165, 128)
+        Me.txtSurname.Name = "txtSurname"
+        Me.txtSurname.Size = New System.Drawing.Size(325, 35)
+        Me.txtSurname.TabIndex = 7
         '
-        'txtBOD
+        'Label4
         '
-        Me.txtBOD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.txtBOD.Location = New System.Drawing.Point(165, 207)
-        Me.txtBOD.Name = "txtBOD"
-        Me.txtBOD.Size = New System.Drawing.Size(145, 35)
-        Me.txtBOD.TabIndex = 17
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(24, 131)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(80, 29)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "ນາມສະກຸນ"
         '
-        'txtPhone
+        'txtEmpName
         '
-        Me.txtPhone.Location = New System.Drawing.Point(165, 251)
-        Me.txtPhone.Mask = "000 00000000"
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(145, 35)
-        Me.txtPhone.TabIndex = 18
+        Me.txtEmpName.Location = New System.Drawing.Point(165, 87)
+        Me.txtEmpName.Name = "txtEmpName"
+        Me.txtEmpName.Size = New System.Drawing.Size(325, 35)
+        Me.txtEmpName.TabIndex = 5
         '
-        'txtAddress
+        'Label3
         '
-        Me.txtAddress.Location = New System.Drawing.Point(165, 333)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(325, 96)
-        Me.txtAddress.TabIndex = 19
-        Me.txtAddress.Text = ""
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(24, 90)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(88, 29)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "ຊື່ພະນັກງານ"
         '
-        'Label9
+        'Label2
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(24, 47)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(64, 29)
-        Me.Label9.TabIndex = 20
-        Me.Label9.Text = "ຕຳແໜ່ງ"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(24, 172)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 29)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "ເພດ"
         '
-        'cmb_Postion
+        'txtEmpID
         '
-        Me.cmb_Postion.FormattingEnabled = True
-        Me.cmb_Postion.Location = New System.Drawing.Point(165, 44)
-        Me.cmb_Postion.Name = "cmb_Postion"
-        Me.cmb_Postion.Size = New System.Drawing.Size(325, 37)
-        Me.cmb_Postion.TabIndex = 21
+        Me.txtEmpID.Location = New System.Drawing.Point(165, 3)
+        Me.txtEmpID.Name = "txtEmpID"
+        Me.txtEmpID.Size = New System.Drawing.Size(124, 35)
+        Me.txtEmpID.TabIndex = 1
         '
-        'pbImage
+        'Label1
         '
-        Me.pbImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.pbImage.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pbImage.Location = New System.Drawing.Point(527, 6)
-        Me.pbImage.Name = "pbImage"
-        Me.pbImage.Size = New System.Drawing.Size(203, 157)
-        Me.pbImage.TabIndex = 22
-        Me.pbImage.TabStop = False
-        '
-        'txtpbLink
-        '
-        Me.txtpbLink.Location = New System.Drawing.Point(527, 168)
-        Me.txtpbLink.Name = "txtpbLink"
-        Me.txtpbLink.Size = New System.Drawing.Size(203, 35)
-        Me.txtpbLink.TabIndex = 23
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(24, 6)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(54, 29)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "ລະຫັດ"
         '
         'frmNewEmp
         '

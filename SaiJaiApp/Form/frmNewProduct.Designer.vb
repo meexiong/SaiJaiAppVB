@@ -175,7 +175,7 @@ Partial Class frmNewProduct
         Me.cmbUnit.FormattingEnabled = True
         Me.cmbUnit.Location = New System.Drawing.Point(440, 136)
         Me.cmbUnit.Name = "cmbUnit"
-        Me.cmbUnit.Size = New System.Drawing.Size(84, 32)
+        Me.cmbUnit.Size = New System.Drawing.Size(84, 37)
         Me.cmbUnit.TabIndex = 17
         '
         'cmbCate
@@ -183,7 +183,7 @@ Partial Class frmNewProduct
         Me.cmbCate.FormattingEnabled = True
         Me.cmbCate.Location = New System.Drawing.Point(118, 97)
         Me.cmbCate.Name = "cmbCate"
-        Me.cmbCate.Size = New System.Drawing.Size(406, 32)
+        Me.cmbCate.Size = New System.Drawing.Size(406, 37)
         Me.cmbCate.TabIndex = 16
         '
         'Label8
@@ -191,7 +191,7 @@ Partial Class frmNewProduct
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(35, 227)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(71, 24)
+        Me.Label8.Size = New System.Drawing.Size(74, 29)
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "ໝາຍເຫດ"
         '
@@ -207,7 +207,7 @@ Partial Class frmNewProduct
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(35, 180)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(76, 24)
+        Me.Label7.Size = New System.Drawing.Size(79, 29)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "ລາຄາລວມ"
         '
@@ -216,7 +216,7 @@ Partial Class frmNewProduct
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(364, 142)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(67, 24)
+        Me.Label6.Size = New System.Drawing.Size(70, 29)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "ຫົວໜ່ວຍ"
         '
@@ -232,7 +232,7 @@ Partial Class frmNewProduct
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(225, 143)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 24)
+        Me.Label5.Size = New System.Drawing.Size(61, 29)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "ຈຳນວນ"
         '
@@ -248,7 +248,7 @@ Partial Class frmNewProduct
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(37, 139)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(46, 24)
+        Me.Label4.Size = New System.Drawing.Size(49, 29)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "ລາຄາ"
         '
@@ -257,7 +257,7 @@ Partial Class frmNewProduct
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(37, 98)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 24)
+        Me.Label3.Size = New System.Drawing.Size(58, 29)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "ປະເພດ"
         '
@@ -273,7 +273,7 @@ Partial Class frmNewProduct
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(37, 57)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 24)
+        Me.Label2.Size = New System.Drawing.Size(61, 29)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "ຊື່ສິນຄ້າ"
         '
@@ -281,21 +281,23 @@ Partial Class frmNewProduct
         '
         Me.txtProductID.Location = New System.Drawing.Point(118, 16)
         Me.txtProductID.Name = "txtProductID"
+        Me.txtProductID.ReadOnly = True
         Me.txtProductID.Size = New System.Drawing.Size(100, 35)
         Me.txtProductID.TabIndex = 1
+        Me.txtProductID.Text = "New"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(37, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 24)
+        Me.Label1.Size = New System.Drawing.Size(54, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ລະຫັດ"
         '
         'frmNewProduct
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(611, 473)
         Me.Controls.Add(Me.GroupPanel2)

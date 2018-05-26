@@ -159,7 +159,7 @@ Partial Class frmProduct
         '
         'frmProduct
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1092, 522)
         Me.Controls.Add(Me.GroupPanel2)
