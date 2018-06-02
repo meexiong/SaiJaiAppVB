@@ -135,10 +135,10 @@
     <Compile Include="Form\frmUserLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUnit.Designer.vb">
+    <Compile Include="Form\frmUnit.Designer.vb">
       <DependentUpon>frmUnit.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmUnit.vb">
+    <Compile Include="Form\frmUnit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GlobalVariable.vb" />
@@ -187,7 +187,7 @@
     <EmbeddedResource Include="Form\frmUserLogin.resx">
       <DependentUpon>frmUserLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUnit.resx">
+    <EmbeddedResource Include="Form\frmUnit.resx">
       <DependentUpon>frmUnit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">

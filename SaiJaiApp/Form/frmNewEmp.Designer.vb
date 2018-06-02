@@ -26,7 +26,6 @@ Partial Class frmNewEmp
         Me.btnCancel = New DevComponents.DotNetBar.ButtonX()
         Me.btnNew = New DevComponents.DotNetBar.ButtonX()
         Me.GroupPanel2 = New DevComponents.DotNetBar.Controls.GroupPanel()
-        Me.txtpbLink = New System.Windows.Forms.TextBox()
         Me.pbImage = New System.Windows.Forms.PictureBox()
         Me.cmb_Postion = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -47,6 +46,7 @@ Partial Class frmNewEmp
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtEmpID = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnOpenImage = New DevComponents.DotNetBar.ButtonX()
         Me.GroupPanel1.SuspendLayout()
         Me.GroupPanel2.SuspendLayout()
         CType(Me.pbImage, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,7 +118,7 @@ Partial Class frmNewEmp
         '
         Me.GroupPanel2.CanvasColor = System.Drawing.SystemColors.Control
         Me.GroupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
-        Me.GroupPanel2.Controls.Add(Me.txtpbLink)
+        Me.GroupPanel2.Controls.Add(Me.btnOpenImage)
         Me.GroupPanel2.Controls.Add(Me.pbImage)
         Me.GroupPanel2.Controls.Add(Me.cmb_Postion)
         Me.GroupPanel2.Controls.Add(Me.Label9)
@@ -172,13 +172,6 @@ Partial Class frmNewEmp
         '
         Me.GroupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.GroupPanel2.TabIndex = 2
-        '
-        'txtpbLink
-        '
-        Me.txtpbLink.Location = New System.Drawing.Point(527, 168)
-        Me.txtpbLink.Name = "txtpbLink"
-        Me.txtpbLink.Size = New System.Drawing.Size(203, 35)
-        Me.txtpbLink.TabIndex = 23
         '
         'pbImage
         '
@@ -341,8 +334,10 @@ Partial Class frmNewEmp
         '
         Me.txtEmpID.Location = New System.Drawing.Point(165, 3)
         Me.txtEmpID.Name = "txtEmpID"
+        Me.txtEmpID.ReadOnly = True
         Me.txtEmpID.Size = New System.Drawing.Size(124, 35)
         Me.txtEmpID.TabIndex = 1
+        Me.txtEmpID.Text = "New"
         '
         'Label1
         '
@@ -352,6 +347,17 @@ Partial Class frmNewEmp
         Me.Label1.Size = New System.Drawing.Size(54, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ລະຫັດ"
+        '
+        'btnOpenImage
+        '
+        Me.btnOpenImage.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnOpenImage.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnOpenImage.Location = New System.Drawing.Point(599, 169)
+        Me.btnOpenImage.Name = "btnOpenImage"
+        Me.btnOpenImage.Size = New System.Drawing.Size(131, 23)
+        Me.btnOpenImage.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnOpenImage.TabIndex = 23
+        Me.btnOpenImage.Text = "ເປີດຮູບ"
         '
         'frmNewEmp
         '
@@ -398,5 +404,5 @@ Partial Class frmNewEmp
     Friend WithEvents cmb_Postion As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents pbImage As PictureBox
-    Friend WithEvents txtpbLink As TextBox
+    Friend WithEvents btnOpenImage As DevComponents.DotNetBar.ButtonX
 End Class
